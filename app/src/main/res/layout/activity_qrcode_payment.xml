@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/rectangle">
+
+    <TextView
+        android:id="@+id/ticket_qrco"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/black"
+        android:text="Alfamart Indomaret payment code"
+        android:gravity="top"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="71dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/qr_code" />
+
+    <TextView
+        android:id="@+id/back_detail"
+        android:layout_width="117dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="113dp"
+        android:layout_marginTop="33dp"
+        android:textAllCaps="true"
+        android:text="Back To Detail"
+        android:lineSpacingExtra="9sp"
+        android:translationY="4.45sp"
+        android:textColor="@color/purple_500"
+        android:gravity="top"/>
+
+</LinearLayout>

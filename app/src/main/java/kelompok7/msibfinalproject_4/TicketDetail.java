@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -53,7 +54,12 @@ public class TicketDetail extends AppCompatActivity {
         TextView estimateTime = findViewById(R.id.estimateTime);
         TextView seatsNo = findViewById(R.id.seatsNo);
         TextView total = findViewById(R.id.total);
+        Button btnPayment = findViewById(R.id.btnPayment);
 
+        btnPayment.setOnClickListener(v -> {
+            startActivity(new Intent(this, OrderPayment.class));
+            finish();
+        });
         back_button.setOnClickListener(v -> {
             startActivity(new Intent(TicketDetail.this, BusDetail.class));
             finish();

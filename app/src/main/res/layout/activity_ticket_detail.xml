@@ -520,4 +520,11 @@
             android:gravity="top"/>
 
     </RelativeLayout>
+    <Button
+        android:id="@+id/btnPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Continue To Payment"
+        android:layout_alignParentBottom="true"/>
 </RelativeLayout>
