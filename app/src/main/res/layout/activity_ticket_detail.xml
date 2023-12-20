@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TicketDetail">
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="22dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="317dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/icon_back"/>
+
+    <TextView
+        android:id="@+id/ticket_deta"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="Ticket Detail"/>
+
+    <ImageButton
+        android:id="@+id/qrcode"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/qrcode"/>
+
+    <LinearLayout
+        android:id="@+id/first_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="94dp"
+        android:orientation="vertical"
+        android:background="@drawable/rectangle">
+
+        <RelativeLayout
+            android:id="@+id/rectangle"
+            android:layout_width="343dp"
+            android:layout_height="39dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rectangle_3">
+
+            <TextView
+                android:id="@+id/dateDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="23dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:text="14 DES 2023. 10:00"
+                android:textColor="@color/white"
+                android:lineSpacingExtra="10sp"
+                android:translationY="-4.8sp"
+                android:gravity="top"/>
+            <TextView
+                android:id="@+id/book_no_230"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="193dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:text="Book No."
+                android:textColor="@color/white"
+                android:lineSpacingExtra="10sp"
+                android:translationY="-4.8sp"
+                android:gravity="right|top"/>
+
+            <TextView
+                android:id="@+id/bookNumberDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/book_no_230"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="15dp"
+                android:lineSpacingExtra="10sp"
+                android:text="230719-0001"
+                android:textColor="@color/white"
+                android:translationY="-4.8sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/rectangle_3"
+                android:layout_width="4dp"
+                android:layout_height="36dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="33dp"
+                android:src="@drawable/rectangle_4"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:text="Nama"
+                android:lineSpacingExtra="10sp"
+                android:translationY="4.8sp"
+                android:gravity="top"/>
+
+            <TextView
+                android:id="@+id/nameDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="39dp"
+                android:text="John Doe"
+                android:gravity="top"/>
+
+            <LinearLayout
+                android:id="@+id/rating"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="267dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rectangle_1"
+                android:orientation="vertical"
+                android:elevation="25dp">
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="9dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/icon_star_1"/>
+
+                <TextView
+                    android:id="@+id/ratingNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal|top"
+                    android:text="\?/5"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="344dp"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="-1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="68dp"
+                android:src="@drawable/rectangle_3"/>
+
+            <TextView
+                android:id="@+id/phone_num"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="34dp"
+                android:text="Nomor HP"
+                android:lineSpacingExtra="10sp"
+                android:translationY="4.8sp"
+                android:gravity="top"/>
+
+            <TextView
+                android:id="@+id/phoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:text="081355557889"
+                android:gravity="top"/>
+
+            <TextView
+                android:id="@+id/seats"
+                android:layout_width="29dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="156dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="34dp"
+                android:text="Seat"
+                android:lineSpacingExtra="10sp"
+                android:translationY="4.8sp"
+                android:gravity="top"/>
+
+            <TextView
+                android:id="@+id/seatsDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="156dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:text="2"
+                android:gravity="top"/>
+
+            <TextView
+                android:id="@+id/ticket_stat"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="232dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="92dp"
+                android:text="Ticket Status"
+                android:lineSpacingExtra="10sp"
+                android:translationY="4.8sp"
+                android:gravity="top"/>
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="232dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="117dp"
+                android:src="@drawable/ceklis"/>
+
+            <TextView
+                android:id="@+id/statusPembayaranDetail"
+                android:layout_width="43dp"
+                android:layout_height="19dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="258dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="116dp"
+                android:text="Lunas"
+                android:gravity="top"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/second_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="293dp"
+        android:background="@drawable/rectangle">
+
+        <TextView
+            android:id="@+id/po_name"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:text="PO Nama"
+            android:lineSpacingExtra="10sp"
+            android:translationY="4.8sp"
+            android:gravity="top"/>
+
+        <ImageView
+            android:layout_width="4dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="33dp"
+            android:background="@drawable/rectangle_3"/>
+
+        <TextView
+            android:id="@+id/poNameDetail"
+            android:layout_width="99dp"
+            android:layout_height="22dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="39dp"
+            android:text="Gunung Harta"
+            android:gravity="top"/>
+
+        <TextView
+            android:id="@+id/bus_no_"
+            android:layout_width="38dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="227dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:text="Bus No"
+            android:lineSpacingExtra="10sp"
+            android:translationY="4.8sp"
+            android:gravity="top"/>
+
+        <TextView
+            android:id="@+id/poNumberDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="227dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="38dp"
+            android:text="P 9123 NN"
+            android:lineSpacingExtra="10sp"
+            android:translationY="4.8sp"
+            android:gravity="top"/>
+
+        <TextView
+            android:id="@+id/schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="81dp"
+            android:text="Schedule"
+            android:lineSpacingExtra="10sp"
+            android:translationY="4.8sp"
+            android:gravity="top"/>
+
+        <TextView
+            android:id="@+id/estimated_t"
+            android:layout_width="80dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="227dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="82dp"
+            android:text="Estimasi Waktu"
+            android:lineSpacingExtra="10sp"
+            android:translationY="4.8sp"
+            android:gravity="top"/>
+
+        <TextView
+            android:id="@+id/startAt"
+            android:layout_width="38dp"
+            android:layout_height="19dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="106dp"
+            android:text="10:30"
+            android:gravity="top"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="52dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="133dp"
+            android:background="@drawable/line"/>
+
+        <TextView
+            android:id="@+id/endAt"
+            android:layout_width="38dp"
+            android:layout_height="19dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="188dp"
+            android:text="20:30"
+            android:gravity="top"/>
+
+        <TextView
+            android:id="@+id/startCity"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="88dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="106dp"
+            android:textAllCaps="true"
+            android:text="Surabaya"
+            android:gravity="top"/>
+
+        <TextView
+            android:id="@+id/startTerminal"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="88dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="121dp"
+            android:text="Terminal Bungurasih"
+            android:lineSpacingExtra="10sp"
+            android:translationY="4.8sp"
+            android:gravity="top" />
+
+        <TextView
+            android:id="@+id/startDate"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="88dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="140dp"
+            android:text="14 Desember 2023"
+            android:lineSpacingExtra="10sp"
+            android:translationY="4.8sp"
+            android:gravity="top"/>
+
+        <TextView
+            android:id="@+id/endCity"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="88dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="188dp"
+            android:textAllCaps="true"
+            android:text="Jakarta"
+            android:gravity="top"/>
+
+        <TextView
+            android:id="@+id/endTerminal"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="88dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="203dp"
+            android:text="Terminal PuloGebang"
+            android:lineSpacingExtra="10sp"
+            android:translationY="4.8sp"
+            android:gravity="top"/>
+
+        <TextView
+            android:id="@+id/endDate"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="88dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="222dp"
+            android:text="14 Desember 2023"
+            android:lineSpacingExtra="10sp"
+            android:translationY="4.8sp"
+            android:gravity="top"/>
+
+        <TextView
+            android:id="@+id/estimateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="227dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="106dp"
+            android:text="14h45m"
+            android:gravity="top"/>
+
+        <TextView
+            android:id="@+id/seat_no_"
+            android:layout_width="42dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="227dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="164dp"
+            android:text="Seat no"
+            android:lineSpacingExtra="10sp"
+            android:translationY="4.8sp"
+            android:gravity="top"/>
+
+        <TextView
+            android:id="@+id/seatsNo"
+            android:layout_width="33dp"
+            android:layout_height="19dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="227dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="188dp"
+            android:text="9, 10"
+            android:gravity="top"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="576dp"
+        android:background="@drawable/rectangle_total">
+
+        <TextView
+            android:id="@+id/totalTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="29dp"
+            android:text="Total"/>
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="28dp"
+            android:text="Rp332.333,00"
+            android:gravity="top"/>
+
+    </RelativeLayout>
+</RelativeLayout>

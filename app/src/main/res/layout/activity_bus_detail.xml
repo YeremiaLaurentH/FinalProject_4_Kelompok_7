@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BusDetail">
+    <TextView
+        android:id="@+id/bookTrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19.50dp"
+        android:text="Book a trip"
+        android:textColor="@color/black"
+        android:textSize="19.50dp" />
+
+    <ImageView
+        android:id="@+id/panah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32.50dp"
+        android:layout_marginTop="19.50dp"
+        android:src="@drawable/icon_back" />
+
+    <ImageView
+        android:id="@+id/bus"
+        android:layout_width="wrap_content"
+        android:layout_height="215dp"
+        android:layout_below="@+id/bookTrip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32.50dp"
+        android:src="@drawable/bus_gunungharta" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/busCard"
+        android:layout_width="182.00dp"
+        android:layout_height="45.50dp"
+        android:layout_marginLeft="45.50dp"
+        android:layout_marginTop="247.00dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="13.00dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="13.00dp"
+            android:text="Gunung Harta"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="123.50dp"
+            android:src="@drawable/icon_star" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="143.00dp"
+            android:text="9/10"
+            android:textColor="@color/black" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/seePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="260.00dp"
+        android:layout_toRightOf="@+id/busCard"
+        android:text="See picture"
+        android:textAllCaps="false"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/friday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/busCard"
+        android:layout_marginLeft="45.50dp"
+        android:layout_marginTop="26.00dp"
+        android:text="Kamis, 14 Desember 2023" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fridayCard"
+        android:layout_width="338.00dp"
+        android:layout_height="149.50dp"
+        android:layout_below="@+id/friday"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6.50dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="13.00dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13.00dp"
+            android:layout_marginTop="26.00dp"
+            android:text="Surabaya"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13.00dp"
+            android:layout_marginTop="45.50dp"
+            android:text="10:30"
+            android:textSize="19.50dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13.00dp"
+            android:layout_marginTop="78.00dp"
+            android:text="Date"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13.00dp"
+            android:layout_marginTop="97.50dp"
+            android:text="14 Desember 2023"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="26.00dp"
+            android:layout_marginRight="13.00dp"
+            android:text="Jakarta"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="45.50dp"
+            android:layout_marginRight="13.00dp"
+            android:text="20:30"
+            android:textSize="19.50dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="78.00dp"
+            android:layout_marginRight="13.00dp"
+            android:text="Bus No."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="97.50dp"
+            android:layout_marginRight="13.00dp"
+            android:text="P 1208 NN"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="52.00dp"
+            android:src="@drawable/icon_vectordot" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="28.60dp"
+            android:text="14h 45m"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/availableSeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fridayCard"
+        android:layout_marginLeft="45.50dp"
+        android:layout_marginTop="26.00dp"
+        android:text="Available seat"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/availableSeat"
+        android:layout_marginTop="2.60dp"
+        android:backgroundTint="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45.50dp"
+            android:layout_marginTop="2.60dp"
+            android:text="24 Seat are available"/>
+
+        <TextView
+            android:id="@+id/chooseSeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="2.60dp"
+            android:layout_marginRight="45.50dp"
+            android:textColor="@color/purple_500"
+            android:text="Choose Seat"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="45.50dp"
+            android:text="Class"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/perkalian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="26.00dp"
+        android:layout_marginBottom="52.00dp"
+        android:text="2 x 166.000,00"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp332.000,00"
+        android:textSize="19.50dp"
+        android:layout_marginBottom="26.00dp"
+        android:layout_marginLeft="26.00dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/purple_500" />
+
+    <Button
+        android:id="@+id/bookNow"
+        android:layout_width="117.00dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="19.50dp"
+        android:layout_marginBottom="26.00dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="BOOK NOW"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

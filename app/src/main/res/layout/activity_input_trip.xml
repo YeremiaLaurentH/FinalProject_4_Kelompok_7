@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingTop="15dp"
+    android:paddingHorizontal="15dp"
+    tools:context=".InputTrip">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/icons"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="39dp">
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lists"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icons"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="237dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_bus" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icons"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="26dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="19.50dp">
+
+                <TextView
+                    android:id="@+id/textdepart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="45.50dp"
+                    android:text="departure" />
+
+                <LinearLayout
+                    android:id="@+id/depart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textdepart"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="13.00dp"
+                        android:src="@drawable/icon_departure" />
+
+                    <EditText
+                        android:id="@+id/inputdeparture"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Try 'Surabaya'"
+                        tools:ignore="TouchTargetSizeCheck"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textarrival"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/depart"
+                    android:paddingLeft="45.50dp"
+                    android:text="Arrival" />
+
+                <LinearLayout
+                    android:id="@+id/arrival"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textarrival"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="13.00dp"
+                        android:src="@drawable/icon_arrival" />
+
+                    <EditText
+                        android:id="@+id/inputarrival"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Try 'Jakarta'"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/passenger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/arrival"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="130.00dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="45.50dp"
+                            android:text="Passengger" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="13.00dp"
+                                android:src="@drawable/icon_penumpang" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:id="@+id/seatss"
+                                android:layout_height="wrap_content"
+                                android:hint="2 ppl"
+                                tools:ignore="TouchTargetSizeCheck" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="130.00dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="39.00dp"
+                            android:text="Date" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="13.00dp"
+                                android:src="@drawable/icon_date" />
+
+                            <EditText
+                                android:id="@+id/datepick"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="6 Des"
+                                tools:ignore="TouchTargetSizeCheck"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lists">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/searchBus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/holo_purple"
+            android:text="Search Bus"
+            android:textColor="@color/white"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="39.00dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="39.00dp"
+            android:src="@drawable/icon_search" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="78.00dp"
+            android:onClick="ticketList"
+            android:src="@drawable/icon_note" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="soon"
+            android:layout_marginLeft="75.00dp"
+            android:src="@drawable/icon_notification" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="soon"
+            android:layout_marginLeft="61.00dp"
+            android:src="@drawable/icon_profile" />
+    </LinearLayout>
+
+</RelativeLayout>

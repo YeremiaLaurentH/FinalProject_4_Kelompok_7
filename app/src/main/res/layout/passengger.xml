@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="26dp"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/howmuch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select how much passenger"
+        android:textColor="@color/black"
+        android:textSize="16.90dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/oldertext"
+        android:layout_below="@id/howmuch"
+        android:text="older than 2 years old should buy a seat"
+        android:textSize="13.00dp"/>
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/oldertext"
+        android:layout_marginTop="19.50dp"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="@color/purple_500"
+        android:textSize="45.50dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passe"
+        android:layout_below="@id/count"
+        android:layout_marginTop="6.50dp"
+        android:gravity="center"
+        android:text="Passenger"
+        android:textSize="19.50dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+    <SeekBar
+        android:id="@+id/seekbarr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passe"
+        android:paddingTop="19.50dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekbarr"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginRight="19.50dp"
+            android:layout_width="130.00dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancel"
+            android:layout_marginTop="39.00dp"
+            android:text="cancel"
+            android:background="#EAEAEA"
+            android:textColor="@color/purple_500"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="130.00dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/select"
+            android:layout_marginTop="39.00dp"
+            android:text="Select"
+            android:background="@color/purple_500"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

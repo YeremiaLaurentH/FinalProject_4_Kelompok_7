@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="89dp"
+            android:layout_height="22dp"
+            android:gravity="center_horizontal"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="143dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:text="Your Ticket"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/gambar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/logo_bus"
+            android:layout_width="218dp"
+            android:layout_height="226dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/logo_bus"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/teks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/gambar">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="40dp"
+            android:text="OOPS"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Anda Belum Mempunyai Tiket"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Silahkan Beli Tiket Anda."
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="InputTrip"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/icon_search" />
+
+        <ImageView
+            android:id="@+id/ivNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="ticketList"
+            android:layout_marginLeft="79dp"
+            android:src="@drawable/icon_note" />
+
+        <ImageView
+            android:id="@+id/ivNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="78dp"
+            android:src="@drawable/icon_notification" />
+
+        <ImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
+            android:src="@drawable/icon_profile" />
+    </LinearLayout>
+
+</RelativeLayout>

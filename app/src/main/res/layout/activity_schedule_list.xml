@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="#F2EBE9"
+    tools:context=".ScheduleList">
+    <LinearLayout
+        android:id="@+id/icons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="19.50dp">
+
+        <ImageButton
+            android:id="@+id/backSchedule"
+            android:layout_width="100dp"
+            android:layout_height="36.40dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/icon_back"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icons"
+        android:paddingTop="26.00dp"
+        android:id="@+id/depararri"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:layout_width="156.00dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="13.00dp"
+            android:layout_marginLeft="19.50dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6.50dp">
+
+                <TextView
+                    android:id="@+id/departure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Departure" />
+
+                <TextView
+                    android:id="@+id/inputdeparture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/departure"
+                    android:background="#00FFFFFF"
+                    android:textSize="19dp"
+                    android:drawableRight="@drawable/icon_arrowdrop_down"
+                    android:hint="Surabaya"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="156.00dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="13.00dp"
+            android:layout_marginLeft="26.00dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6.50dp">
+
+                <TextView
+                    android:id="@+id/arrival"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Arrival" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/arrival"
+                    android:hint="Jakarta"
+                    android:textSize="19.50dp"
+                    android:textStyle="bold"
+                    android:background="#00FFFFFF"
+                    android:id="@+id/inputarrival"
+                    android:drawableRight="@drawable/icon_arrowdrop_down"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/boxinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/rectangle_2">
+
+        <TextView
+            android:id="@+id/po_name"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:gravity="top"
+            android:lineSpacingExtra="10sp"
+            android:text="PO Nama"
+            android:translationY="5sp" />
+
+        <ImageView
+            android:layout_width="4dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="33dp"
+            android:background="@drawable/rectangle_4" />
+
+        <TextView
+            android:id="@+id/poNameDetail"
+            android:layout_width="99dp"
+            android:layout_height="22dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="39dp"
+            android:gravity="top"
+            android:text="Gunung Harta"/>
+
+        <LinearLayout
+            android:id="@+id/rating"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="267dp"
+            android:layout_marginTop="26.00dp"
+            android:background="@drawable/rectangle_1"
+            android:elevation="25dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="9dp"
+                android:layout_height="9dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/icon_star_1" />
+
+            <TextView
+                android:id="@+id/ratingNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal|top"
+                android:text="4.9/5"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="81dp"
+            android:gravity="top"
+            android:lineSpacingExtra="10sp"
+            android:text="Jadwal"
+            android:translationY="5sp" />
+
+        <TextView
+            android:id="@+id/estimated_t"
+            android:layout_width="80dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="227dp"
+            android:layout_marginTop="82dp"
+            android:gravity="end"
+            android:lineSpacingExtra="10sp"
+            android:text="120"
+            android:textAlignment="viewEnd"
+            android:translationY="4.8sp" />
+
+        <TextView
+            android:id="@+id/startAt"
+            android:layout_width="38dp"
+            android:layout_height="19dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="106dp"
+            android:gravity="top"
+            android:text="10:30"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="133dp"
+            android:background="@drawable/line"/>
+
+        <TextView
+            android:id="@+id/endAt"
+            android:layout_width="38dp"
+            android:layout_height="19dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="188dp"
+            android:gravity="top"
+            android:text="20:30"/>
+        <TextView
+            android:id="@+id/startCity"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="88dp"
+            android:layout_marginTop="106dp"
+           android:gravity="top"
+            android:text="Surabaya"
+            android:textAllCaps="true"/>
+        <TextView
+            android:id="@+id/startTerminal"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="88dp"
+            android:layout_marginTop="121dp"
+            android:gravity="top"
+            android:lineSpacingExtra="10sp"
+            android:text="Terminal Bungurasih"
+            android:translationY="5sp" />
+
+        <TextView
+            android:id="@+id/startDate"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="88dp"
+            android:layout_marginTop="140dp"
+            android:gravity="top"
+            android:lineSpacingExtra="10sp"
+            android:text="14 Desember 2023"
+            android:translationY="5sp" />
+
+        <TextView
+            android:id="@+id/endCity"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="88dp"
+            android:layout_marginTop="188dp"
+            android:gravity="top"
+            android:text="Jakarta"
+            android:textAllCaps="true"/>
+        <TextView
+            android:id="@+id/endTerminal"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="88dp"
+            android:layout_marginTop="203dp"
+            android:gravity="top"
+            android:lineSpacingExtra="10sp"
+            android:text="Terminal PuloGebang"
+            android:translationY="4.8sp" />
+
+        <TextView
+            android:id="@+id/endDate"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="88dp"
+            android:layout_marginTop="222dp"
+            android:gravity="top"
+            android:lineSpacingExtra="10sp"
+            android:text="14 Desember 2023"
+            android:translationY="5sp" />
+
+        <TextView
+            android:id="@+id/estimateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="253.50dp"
+            android:layout_marginTop="106dp"
+            android:gravity="top"
+            android:text="Reviews"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="344dp"
+        android:layout_height="85dp"
+        android:layout_below="@id/boxinfo"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangle_total">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/harga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/harganominal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Rp166.000,00"
+                    android:textColor="@color/purple_500" />
+
+                <TextView
+                    android:id="@+id/totalTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="15dp"
+                    android:text="/Seat"/>
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="91.00dp"
+                android:layout_marginTop="16.90dp"
+                android:background="@color/purple_500"
+                android:text="Details"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>
